@@ -4,10 +4,6 @@ npm install cypress --save-dev
 
 npx cypress open
 
-# Simulação de Carga Simples com Cypress
-
-Este script utiliza o Cypress para simular múltiplos acessos a uma aplicação web. Ele realiza 50 requisições consecutivas para verificar se a página carrega corretamente e valida o título.
-
 ## Código
 
 ```javascript
@@ -20,7 +16,7 @@ describe('Simulacao de Carga Simples com Cypress', () => {
       cy.visit('https://exemplo.com') // Substitua pela URL da aplicacao
         .then(() => {
           // Verifica se a pagina foi carregada corretamente
-          cy.title().should('include', 'nomeExemplo');
+          cy.title().should('include', 'nomeExemplo'); //Substitua o nome de página
         });
     }
   });
