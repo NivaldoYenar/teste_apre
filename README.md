@@ -11,10 +11,10 @@ describe('Simulacao de Carga Simples com Cypress', () => {
 
     // Loop para simular multiplos acessos
     for (let i = 0; i < numRequests; i++) {
-      cy.visit('https://www.wikipedia.org/') // Substitua pela URL da aplicacao
+      cy.visit('https://exemplo.com') // Substitua pela URL da aplicacao
         .then(() => {
           // Verifica se a pagina foi carregada corretamente
-          cy.title().should('include', 'Wikipedia');
+          cy.title().should('include', 'nomeExemplo');
         });
     }
   });
