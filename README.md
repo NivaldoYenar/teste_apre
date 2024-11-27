@@ -1,3 +1,9 @@
+# Comando Cypress
+
+npm install cypress --save-dev
+
+npx cypress open
+
 # Simulação de Carga Simples com Cypress
 
 Este script utiliza o Cypress para simular múltiplos acessos a uma aplicação web. Ele realiza 50 requisições consecutivas para verificar se a página carrega corretamente e valida o título.
